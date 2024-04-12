@@ -2,7 +2,7 @@
 layout: default
 title: Publishing
 nav_order: 10
-last_modified_date: 2023-03-24 13:32
+last_modified_date: 2024-04-12 16:28
 ---
 
 # Publishing
@@ -23,7 +23,7 @@ final steps to get your item on the Workshop.<!-- more -->
 1. TOC
 {:toc}
 
-Each item you upload is [publicly available*](#steams-eula-agreement) usually in under a minute (longer for levels).
+Each item you upload is [available*](#steams-eula-agreement) usually in under a minute (longer for levels).
 
 ---
 
@@ -31,7 +31,7 @@ Each item you upload is [publicly available*](#steams-eula-agreement) usually in
 
 ### Steam's EULA Agreement
 
-Make sure you have accepted [Steam's EULA agreement](https://steamcommunity.com/workshop/workshoplegalagreement/){:target="_blank"}, if you haven't accepted it, your item won't be available to be seen by anyone but you.
+Make sure you have accepted [Steam's EULA agreement](https://steamcommunity.com/workshop/workshoplegalagreement/){:target="_blank"}, if you haven't accepted it, your item won't be available to be seen by anyone but you and the Workshop administrators.
 
 ### Read Nexile's guidelines
 
@@ -41,12 +41,62 @@ Make sure you have accepted [Steam's EULA agreement](https://steamcommunity.com/
 
 Make sure you have read the [**Testing**]({{site.baseurl}}/getting-started/map-first-steps/#testing) section of Level: First steps.
 
+## Publishing your item
 
-<!-- ## Steps (using Worldsmith)
-🚧 Work in Progress. **No trespassing!** 🏗
-{: .disclaimer } -->
+Before continuing make sure you've checked the disclaimers above, since they are crucial to publishing your item.
 
+> If your item has already been published, [updating your item follows the same steps]({{ site.baseurl }}/updating/#updating-your-item).
+{: .highlight }
+
+1. Open your project on Worldsmith, and navigate to the **Item details** page.
+
+2. Scroll down until you find the **Workshop details** section.
+
+3. *(Optional but welcome)* Customize your item selecting the appropriate tags (hover a tag for more details), a interesting description, visibility and your first changelog.
+
+   ![Details]({{site.baseurl}}/images/level-making/worldsmith_upload_details_1.png)
+   ![Details]({{site.baseurl}}/images/level-making/worldsmith_upload_details_2.png)
+
+4. Click on **Upload**.
+5. A prompt will show on screen showing you the progress for your upload. Once done uploading, Worldsmith will tell you it has uploaded your item like so:
+
+   ![Update successful]({{ site.baseurl }}/images/level-making/worldsmith_success_upload_item.png)
+
+6. If Worldsmith has shown the pop-up like the example above, you have **successfully uploaded** your item. From here you can either close the pop-up by clicking **Close** or check your newly created item's Steam Workshop page by clicking **Open on Steam...**.
+
+### Add a thumbnail to your item
+
+The thumbnail is what most people see first for your item, having a blank default thumbnail for your item won't make it stand out.
+
+{: .warning }
+> For the Steam limitations, we recommend you to follow the following details:
+- image type: **png**
+- resolution: **256x256 pixels**
+- recommended file size: below **34 kB** (kilobytes)
+- recommended bit depth: **8 bit**
+
+1. After uploading your item, hover on the image you can find on the right side of the **Item details** page.
+
+   ![Hover]({{ site.baseurl }}/images/level-making/worldsmith_change_thumbnail.png)
+
+2. Click on **Replace**.
+
+3. Find your file through the pop-up, select it and click **Open**.
+
+   ![Select thumbnail]({{ site.baseurl }}/images/level-making/worldsmith_select_thumbnail.png)
+
+4. You've successfully replaced your item's Workshop thumbnail.
+
+   ![Thumbnail success]({{ site.baseurl }}/images/level-making/steam_thumbnail_success.png)
+
+Thumbnail is just the start! From your item's Workshop page, you can add plenty of additional images, videos, links and other stuff!
+
+<details class="expander">
+   <summary markdown="1">
 ## Steps (using Workshop Manager)
+   </summary>
+
+   <div markdown="1">
 
 {: .toc-spaced }
 1. Open `Jump King Workshop Manager` from Steam or [**click here**](steam://rungameid/2245910).<br>
@@ -95,7 +145,9 @@ Make sure you have read the [**Testing**]({{site.baseurl}}/getting-started/map-f
    ![Step 6]({{ site.baseurl }}/images/publishing/Step6.png)
 
 
-## Next
+### Next up
+{: .no_toc }
+
 Once the upload is completed, it will ask you if you to see it on the Steam Workshop's page, from there you can further modify its page by adding more images, improve your description or decide to remove your item.
 
 <figure class="mb-5">
@@ -107,5 +159,10 @@ Once the upload is completed, it will ask you if you to see it on the Steam Work
    <img src="{{ site.baseurl }}/images/publishing/Step8.png" alt="Steam page preview">
    <figcaption class="text-grey-dk-000 text-epsilon">Steam Workshop page of the uploaded item. Tags are automatically given by the uploading tool chosen by the user.</figcaption>
 </figure>
+
+</div>
+</details>
+
+## Next up
 
 If you want to modify the item's content, head over to the [**Updating**]({{ site.baseurl }}/updating) page.

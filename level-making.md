@@ -4,7 +4,7 @@ title: Level Making
 has_children: true
 has_toc: false
 nav_order: 7
-last_modified_date: 2023-03-24 13:32
+last_modified_date: 2023-04-12 17:18
 ---
 
 # Level Making
@@ -21,7 +21,49 @@ last_modified_date: 2023-03-24 13:32
 
 ---
 
-## Why does Jump King need a configuration file?
+{: .warning }
+> **All the changes you make on your level will be available only to you until you decide to [upload]({{ site.baseurl }}/publishing/#publishing-your-item) your Workshop item. Every further modification needs an [update]({{ site.baseurl }}/updating/#updating-your-item) to your Workshop item to be available to everyone that is subscribed to your item.**
+
+## Change your level title
+
+The level title is the text that gets shown in-game when paused, inside your Worldsmith project, in your item's workshop page and in the Workshop overall (once released public).
+
+To change your level's title:
+1. Open Worldsmith through Steam and open your level project from the recents or favorites list.
+    > If you can't find your project in your recents/favorites list and you know where it's placed in your drive, click on **Load an existing project** and follow the instructions on screen.
+    {: .note }
+
+2. Once clicked, you'll see the title of your level in the header of Worldsmith, this means your project has been opened in Worldsmith. Some pages will show up on the sidebar now like in the image below.
+
+    ![Opened project]({{ site.baseurl }}/images/level-making/worldsmith_selected_project.png)
+
+3. From the left sidebar, enlarge the sidebar with the expand button and click on **Item details** or click on the first item below the map icon (*resembling a circled i*).
+
+    ![Item details button]({{ site.baseurl }}/images/level-making/worldsmith_click_item_details.png)
+
+4. Right below the header "**Item details**", you should find another header "**Title**"; here using the input box you can change the name of your level. 
+    > The changes will take place after you click outside of the input box.
+
+5. You've successfully changed the name of your level locally.
+
+<!-- ## Changing the babe screen
+
+By default, the babe's screen equals the one in the main game.
+
+## Setting the starting data
+## Setting the ending images
+## Setting the ending extra images
+## Setting the end credits -->
+
+<details class="expander">
+   <summary markdown="1">
+## Steps (without Worldsmith)
+   </summary>
+
+   <div markdown="1">
+
+### Why does Jump King need a configuration file?
+{: .no_toc }
 
 In order for get the basic data about your map, Jump King (and in the past with JumpKingPlus) uses a configuration file.
 
@@ -35,13 +77,8 @@ This configuration file contains your level:
 - **ending extra images** (letting you choose what item can trigger the secondary ending image)
 - **end credits** (once you finish your level, after the cutscene)
 
-<!-- ## Steps (using Worldsmith)
-🚧 Work in Progress. **No trespassing!** 🏗
-{: .disclaimer } -->
-
-## Steps 
-
 ### Setting your level title
+{: .no_toc }
 
 1. Search for "title" in your XML file.
    You should find something like this:
@@ -52,6 +89,7 @@ This configuration file contains your level:
 3. Done!
 
 ### Setting a different babe screen number
+{: .no_toc }
 
 1. Search for "ending_screen" in your XML file.
    You should find something like this:
@@ -64,6 +102,7 @@ This configuration file contains your level:
 For the second and third babe, the procedure is the same but replacing your search query with "ending_screen_second" or "ending_screen_third".
 
 ### Setting the starting data
+{: .no_toc }
 
 To set a new starting data:
 1. Copy the following snippet: 
@@ -90,6 +129,7 @@ To set a new starting data:
 To remove a starting data, select the **whole** `StartData` tag and delete it.
 
 ### Setting the ending images
+{: .no_toc }
 
 1. Make sure you have a packed image (file that has been converted to XNB) with **480x360 pixels of resolution**.
 2. Move your image into the `ending` folder.
@@ -104,6 +144,7 @@ To remove a starting data, select the **whole** `StartData` tag and delete it.
 For the other babes, repeat the process replacing your search query with "SecondBabe" or "ThirdBabe".
 
 ### Setting the ending extra images
+{: .no_toc }
 
 1. Make sure you have a packed image (file that has been converted to XNB) with **480x360 pixels of resolution**.
 2. Move your image into the `ending` folder.
@@ -120,6 +161,7 @@ For the other babes, repeat the process replacing your search query with "Second
 6. Done!
 
 ### Setting the end credits
+{: .no_toc }
 
 1. Search for "EndingLines" in your XML file.
    You should find something like this:
@@ -162,6 +204,9 @@ To add a new Credit simply add another Credit like the example above.
 > Inside the Ending Lines, it's possible to use the default library for translations included in the game. LanguageJK includes all the possible text in Jump King based by your localization language.
 > [Check out all the possible combinations!]({{ site.baseurl }}/api/LanguageJK.xml){: target="_blank"}
 {: .important-title }
+
+</div>
+</details>
 
 ## Next up
 

@@ -3,7 +3,7 @@ layout: default
 title: File types
 parent: Getting started
 nav_order: 3
-last_modified_date: 2023-03-28 11:02
+last_modified_date: 2024-04-12 16:41
 ---
 
 # File types
@@ -119,7 +119,7 @@ These files are packed into XNB format to make them more efficient and faster to
 
 ### Why are packed files necessary?
 
-To understand why this is necessary, let's consider an example of an image file. When you save an image file on your computer, it typically includes a lot of additional data such as the date created, the author, the file format, and so on. This metadata takes up space and slows down the loading of the file especially.
+To understand why this is necessary, let's consider an example of an image file. When you save an image file on your computer, it typically includes a lot of additional data such as the date created, the author, the file format, and so on. This data  (called metadata) takes up space and slows down the loading of the file especially.
 
 Similarly, when a game loads content such as images or sounds, it needs to read all of this metadata along with the actual content, which can slow down the loading time.
 

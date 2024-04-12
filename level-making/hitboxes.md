@@ -3,7 +3,7 @@ layout: default
 title: Hitboxes
 parent: Level Making
 nav_order: 1
-last_modified_date: 2023-03-24 13:32
+last_modified_date: 2024-04-12 21:04
 ---
 
 # Hitbox file
@@ -72,13 +72,12 @@ Here's an visual example of how hitboxes work in Jump King:
 5. Convert/Pack the image into XNB with the tool of your choice.
 6. Place it in the folder of your level. If asked to replace the file, click **Yes**.
 7. [Give it a test!]({{site.baseurl}}/getting-started/map-first-steps#testing).
-   > If your game is already opened from testing it before, simply nagivate to the pause menu and click **Hard Update** and the new hitboxes should show up.
+   > If your game was already open from testing it before, simply nagivate to the pause menu and click **Update** and the new hitboxes should show up.
    {: .note }
 
-## Disclaimer about hitboxes
-
-Even if the details you have planned look good, what matters more is the quality and fair of your hitboxes. Please give a read to [some tricks and tips]({{site.baseurl}}/level-making/tips) from JumpKingPlus' veterans.
-
 ## Next up
+
+> Even if the details you have planned look good, what matters more is the quality and fair of your hitboxes. Please give a read to [some tricks and tips]({{site.baseurl}}/level-making/tips) from JumpKingPlus' veterans.
+{: .note }
 
 Read up on [**Starter Blocks**]({{site.baseurl}}/level-making/blocks/#blocks-for-new-users) then head to [**Screens**]({{site.baseurl}}/level-making/screens/).

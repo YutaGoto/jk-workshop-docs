@@ -247,5 +247,43 @@ layout: table_wrappers
     window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
   </script>
   {% endif %}
+
+  <script>
+    function openTarget()
+    {
+      var hash = location.hash.substring(1);
+
+      if(hash)
+        var details = document.getElementById(hash);
+
+      if (details)
+      {
+        var should_continue = true;
+        var item = details;
+  
+        while (should_continue)
+        {
+          switch (item.tagName.toLocaleLowerCase())
+          {
+            case "body":
+              should_continue = false;
+              return;
+          
+            case "details":
+              should_continue = false;
+              item.open = true;
+              document.documentElement.style.scrollPaddingTop = "10rem";
+              return;
+
+            default:
+              item = item.parentElement;
+              break;
+          }
+        }
+      }
+    }
+    window.addEventListener('hashchange', openTarget);
+    openTarget();
+  </script>
 </body>
 </html>

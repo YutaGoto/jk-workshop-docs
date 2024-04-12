@@ -4,7 +4,7 @@ title: Monogame Pipeline
 parent: Content packing tools
 grand_parent: Tools
 nav_order: 10
-last_modified_date: 2023-01-13 16:45
+last_modified_date: 2024-04-10 16:38
 ---
 
 # Monogame Pipeline
@@ -14,11 +14,11 @@ is the official tool used by Nexile to mass-compile all the content for the game
 <!-- more -->
 
 {: .disclaimer }
-> Not recommended. This takes a lot in both space on your drive and time. Choose only if this is your last hope.
+> Not recommended. This takes both space on your drive and time to set up.
 
 [Download steps](#usage){: .btn .btn-blue }
 
-![Preview](https://docs.monogame.net/images/MGCB-editor.png)
+![Preview](https://monogame.net/articles/tools/images/mgcb_editor.png)
 
 ---
 

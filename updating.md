@@ -2,7 +2,7 @@
 layout: default
 title: Updating
 nav_order: 11
-last_modified_date: 2023-03-24 13:32
+last_modified_date: 2024-04-12 15:10
 ---
 
 # Updating
@@ -25,11 +25,32 @@ how to update the content of your items in the Workshop.<!-- more -->
 
 ---
 
-<!-- ## Steps (using Worldsmith)
-🚧 Work in Progress. **No trespassing!** 🏗
-{: .disclaimer } -->
+## Updating your item
 
+> You won't have to follow this if your item has not been published yet, you can quickly checking this in the right side of the **Item details** page, hovering the icon next to your item's title. If your tooltip looks like the following example, you can skip this.
+>
+> ![Check if on workshop]({{ site.baseurl }}/images/level-making/worldsmith_check_if_on_workshop.png)
+{: .warning }
+
+
+1. To bring your changes on the Workshop as well, you will need to scroll down until you find the **Changelog** subsection under **Workshop details** (you can find it before the "Danger zone" section) inside the **Item details** page.
+
+    ![Find changelog]({{ site.baseurl }}/images/level-making/worldsmith_find_changelog.png)
+
+2. *(Optional)* Write what you've changed.
+3. Click **Update**.
+4. A prompt will show on screen showing you the progress for your update. Once done updating, Worldsmith will tell you it has updated your item like so:
+
+    ![Update successful]({{ site.baseurl }}/images/level-making/worldsmith_success_updated_item.png)
+
+5. If Worldsmith has shown the pop-up like the example above, you have **successfully updated** your item. From here you can either close the pop-up by clicking **Close** or check your changes yourself by going on your item's Steam Workshop page by clicking **Open on Steam...**.
+
+<details class="expander">
+   <summary markdown="1">
 ## Steps (using Workshop Manager)
+   </summary>
+
+   <div markdown="1">
 
 {: .toc-spaced }
 1. Open `Jump King Workshop Manager` from Steam or [**click here**](steam://rungameid/2245910).<br>
@@ -95,14 +116,26 @@ how to update the content of your items in the Workshop.<!-- more -->
 7. Click Update and let the tool update the item for you.
    ![Step 7]({{ site.baseurl }}/images/updating/Step7.png)
 
+</div>
+</details>
+
 ## Reverting changes
 
-Once completed, you can navigate on your item's page thanks to the completion prompt and by clicking on the "Change Notes" tab page you can make sure you have updated your item.
+Reverting changes only works on Steam, your project will be unchanged, therefore if you want to continue editing on a rolled back project, you will need to find the changes and undo them yourself!
+{: .important }
+
+> For tech-savvies
+> 
+> Consider using Git (or other version control systems) for each update to ease what's changed.<br>So you can easily rollback on your project too!
+{: .note-title }
+
+Sometimes it can happen you've made an unwanted change.<br>
+By clicking on the "Change Notes" tab on your item's Workshop page you can check when you have updated your item and by clicking **Revert to this version** (based on the date of the change) you can update your item to the chosen specific version.
 
 ![Step 7a]({{ site.baseurl }}/images/updating/Step7a.png)
 
 > This only works if you change the contents of the item, if you change the thumbnail, you won't see any change note.
 {: .warning }
 
-> You can use the changelog text when you plan to have multiple versions of your work. That way you can identify each version and revert back if you need to.
+> It's recommended to always write what has been changed every update. This way, you can immediately identify each edit and revert back if you need to.
 {: .note }
