@@ -16,6 +16,15 @@ This is an in-depth documentation for creating custom levels, skins and sets on 
         <h2 style="display:inline-block;">What's new</h2>
     </summary>
     <dl>
+        <dt>2024.04</dt>
+        <dd>
+            <p>Added step-by-step guide on how to create a level and skin in the first steps.
+            <br>Distinguisting Worldsmith steps to non-Worldsmith steps.
+            <br>Updated publishing and updating pages to add Worldsmith guide.
+            <br>Added Worldsmith to the list of tools.</p>
+        </dd>
+    </dl>
+    <dl>
         <dt>2024.02</dt>
         <dd>
             <p>
