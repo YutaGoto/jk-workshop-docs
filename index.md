@@ -2,10 +2,10 @@
 layout: default
 title: Home
 nav_order: 1
-last_modified_date: 2024-04-19 15:43
+last_modified_date: 2024-04-19 15:55
 ---
 
-# Jump King Workshop Documentation<span class="label label-yellow fs-4 fw-500">beta</span>
+# Jump King Workshop Documentation<span class="label label-green fs-4 fw-500" title="Release candidate">relcan</span>
 {: .fs-8 }
 
 This is an in-depth documentation for creating custom levels, skins and sets on Jump King.
@@ -18,7 +18,9 @@ This is an in-depth documentation for creating custom levels, skins and sets on 
     <dl>
         <dt>2024.04</dt>
         <dd>
+            <p>Updated status from beta to release candidate.</p>
             <p>Updated all pages distinguishing Worldsmith steps to non-Worldsmith steps.
+            <br>Removed particles page to redistribute content between the Screens and Blocks page.
             <br>Added step-by-step guides (with images) on everything that has been implemented on Worldsmith.</p>
             <p>Added step-by-step guide on how to create a level and skin in the first steps.
             <br>Distinguisting Worldsmith steps to non-Worldsmith steps.
