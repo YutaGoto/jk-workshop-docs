@@ -2,7 +2,7 @@
 layout: default
 title: Home
 nav_order: 1
-last_modified_date: 2024-02-22 12:05
+last_modified_date: 2024-04-19 15:43
 ---
 
 # Jump King Workshop Documentation<span class="label label-yellow fs-4 fw-500">beta</span>
@@ -18,6 +18,8 @@ This is an in-depth documentation for creating custom levels, skins and sets on 
     <dl>
         <dt>2024.04</dt>
         <dd>
+            <p>Updated all pages distinguishing Worldsmith steps to non-Worldsmith steps.
+            <br>Added step-by-step guides (with images) on everything that has been implemented on Worldsmith.</p>
             <p>Added step-by-step guide on how to create a level and skin in the first steps.
             <br>Distinguisting Worldsmith steps to non-Worldsmith steps.
             <br>Updated publishing and updating pages to add Worldsmith guide.
