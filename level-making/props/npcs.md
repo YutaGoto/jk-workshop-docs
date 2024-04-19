@@ -4,7 +4,7 @@ title: NPCs
 grand_parent: Level Making
 parent: Props
 nav_order: 3
-last_modified_date: 2023-03-24 13:32
+last_modified_date: 2024-04-19 15:04
 ---
 
 # NPCs
@@ -23,8 +23,8 @@ entities that talk and barter with you.
 
 ![NPC example]({{site.baseurl}}/images/level-making/props/npc_example.png)
 
-> **NPCs are hardcoded** in the game, so they *can not be removed*; but they **can be modified and/or moved** to a screen you are not using (like 0, 169 or 255).
-{: .warning }
+<!-- > **NPCs are hardcoded** in the game, so they *can not be removed*; but they **can be modified and/or moved** to a screen you are not using (like 0, 169 or 255).
+{: .warning } -->
 
 ## Types of NPCs
 
@@ -34,8 +34,9 @@ NPCs can be of two types:
 
 # Normal NPCs
 
-Normal NPCs (or by their technical name Old Man NPCs) are a normal entity in-game that speaks once you trigger its hitbox.
+Normal NPCs (or by their technical name Old Man NPCs) are a normal entity in-game that speaks once you trigger its hitbox (if they have something to say).
 
+<!-- 
 Here's a list of 27 normal NPC you can freely modify as you will:
 
 |Name|Sprite sheet directory|Sprite sheet name|
@@ -67,9 +68,80 @@ Here's a list of 27 normal NPC you can freely modify as you will:
 |cat8|`props/textures/old_man/owl_chars`|`cat8`|
 |owl_bogman|`props/textures/old_man/owl_chars`|`owl_bogman`|
 |owl_boss_gargoyle|`props/textures/old_man/owl_chars`|`owl_boss_gargoyle`|
-|owl_gargoyles|`props/textures/old_man/owl_chars`|`owl_gargoyles`|
+|owl_gargoyles|`props/textures/old_man/owl_chars`|`owl_gargoyles`| -->
+
+## Adding a new NPC
+
+1. Navigate to the **Content Manager** page.
+
+   ![Content Manager]({{ site.baseurl }}/images/level-making/worldsmith_content_manager.png)
+
+2. Scroll until you find an header "**NPCs**".
+3. Click on the **Create a NPC** button found on the right side. A prompt will show up asking the necessary details for your NPC. The following image is how it should look like.
+
+   ![Create a NPC]({{ site.baseurl }}/images/level-making/props/npc_add.png)
+
+4. Select the appropriate type for your NPC (talking only) and write a recognizable name for your NPC, you **won't be able to change it later**!
+5. Click on **Select sprite**.
+7. A new prompt will show up asking you to select a sprite for your NPC.
+
+   ![Add NPC]({{ site.baseurl }}/images/level-making/props/npc_add_preview.png)
+
+8. After selecting your file, click **Open**.
+9. Make sure the row and column count align with your sprite sheet.
+
+   ![NPC adjust spritesheet]({{ site.baseurl }}/images/level-making/props/npc_adjust.png)
+
+10. Click **Add NPC** and you should see your NPC below "Talking only".
+
+   ![NPC success]({{ site.baseurl }}/images/level-making/props/npc_success.png)
+
+## Changing an NPC' setting
+
+1. Navigate to the **Content Manager** page.
+2. Scroll until you find an header "**NPCs**".
+3. Click on the NPC you'd like to edit its settings.
+
+   ![NPC success]({{ site.baseurl }}/images/level-making/props/npc_success.png)
+
+![NPC settings]({{ site.baseurl }}/images/level-making/props/npc_settings.png)
+
+A prompt will show up with the NPC' settings, from here you can modify as you will.
+
+## Changing an NPC' speech
+
+1. Navigate to the **Content Manager** page.
+2. Scroll until you find an header "**NPCs**".
+3. On the NPC you are looking to modify, click on the blue button that contains a text bubble.
+
+   ![NPC success]({{ site.baseurl }}/images/level-making/props/npc_success.png)
+
+![NPC speeches]({{ site.baseurl }}/images/level-making/props/npc_quotes.png)
+
+A prompt will show up with the NPC' quotes, from here you can modify as you will.
+
+## Removing an NPC completely
+
+1. Navigate to the **Content Manager** page.
+2. Scroll until you find an header "**NPCs**".
+3. On the NPC you are looking to modify, click on the red button that contains a trash bin.
+
+   ![NPC success]({{ site.baseurl }}/images/level-making/props/npc_success.png)
+
+4. A prompt will show up asking for confirmation of your deletion. Click **Yes, delete** if you are completely sure.
+
+   ![NPC delete]({{ site.baseurl }}/images/level-making/props/npc_delete.png)
+
+After clicking it, your NPC will be removed completely. And you shouldn't see it both in the **Content Manager** and **Screens** pages.
+
+<details class="expander">
+   <summary markdown="1">
+## Steps (without Worldsmith)
+   </summary>
+   <div markdown="1">
 
 ## Retexturing a normal NPC
+{: .no_toc }
 
 To replace a spritesheet of an NPC:
 
@@ -83,8 +155,9 @@ While the textures for both needs to be inside `props/textures/old_man`, the quo
 - `merchant`, is stored inside `props/textures/old_man/merchant`
 
 ## General settings
+{: .no_toc }
 
-Settings related to the principal details of the NPC such as:
+An NPC contains the following settings:
 
 - name of the NPC (leave as is),
 - sprite sheet,
@@ -96,10 +169,12 @@ Settings related to the principal details of the NPC such as:
 - random count
 
 ### Sprite sheet
+{: .no_toc }
 
 The sprite sheet (or sprite cells) is the combination of the rows and columns count.
 
 #### Setting the sprite sheet
+{: .no_toc }
 {: .no_toc }
 
 1. Search for the `sprite_cells` tag.
@@ -107,6 +182,7 @@ The sprite sheet (or sprite cells) is the combination of the rows and columns co
 3. Modify the Y value with the row count in your packed XNB file.
 
 ### Position and home screen
+{: .no_toc }
 
 The following settings are related to the position of your NPC. The home screen will set the NPC to a specific screen, meanwhile the position will set the position inside the screen of your choice with X and Y coordinates.
 
@@ -123,6 +199,7 @@ The following settings are related to the position of your NPC. The home screen 
 2. Modify its value to the screen of your choice.
 
 ### Other settings (optional)
+{: .no_toc }
 
 Other settings can be:
 
@@ -144,10 +221,12 @@ Other settings can be:
 3. Replace `VALUE_HERE` with the possible values following the table above.
 
 ## Speech bubble and trigger box, talk-related settings
+{: .no_toc }
 
 All settings that will about triggering the NPC, its talk speed, talk delay and speech bubble size.
 
 ### Speech bubble format
+{: .no_toc }
 
 The bubble format can help you format text the way you want it; by aligning it differently, setting the anchor for your text and deciding the maximum width of the NPC's speech.
 
@@ -160,6 +239,7 @@ The bubble format can help you format text the way you want it; by aligning it d
 3. Replace the `width` value with your speech maximum width.
 
 ### Trigger box
+{: .no_toc }
 
 The `trigger_box` tag is needed to trigger the NPC to speak.
 
@@ -176,6 +256,7 @@ The `trigger_box` tag is needed to trigger the NPC to speak.
 {: .note }
 
 ### Talk delay and talking speed
+{: .no_toc }
 
 You can also change:
 - **the talk delay**, which is the delay from when you enter the NPC's hitbox and when the NPC start talking;
@@ -196,10 +277,12 @@ You can also change:
    > Higher is faster.
 
 ## Animation settings
+{: .no_toc }
 
 With the following settings you can set the main two animation cycles: talking and busy (time-out/pause) animations. In order to set this, it is recommended that you have your sprite image opened on the side so you can check while adding them.
 
 ### Talk animation
+{: .no_toc }
 
 #### Setting the talk frames
 {: .no_toc }
@@ -230,6 +313,7 @@ To remove a talk frame:
 3. Remove the whole `AnimationFrame` that contains the `sprite_index` that equals to your frame index.
 
 ### Busy animation
+{: .no_toc }
 
 #### Setting the busy frames
 {: .no_toc }
@@ -237,6 +321,7 @@ To remove a talk frame:
 The process is the same as the [talk animation](#talk-animation) but you need to search for the `busy_animation` instead.
 
 ## Speeches
+{: .no_toc }
 
 The speeches are the text that will show on screen (what will the NPC say).
 
@@ -254,6 +339,7 @@ There are 6 different types of speeches which can be used and their use can vary
 Make sure you understand the difference between quotes and strings before you start. Strings are usually made of a phrase or portions or a phrase (depending on the size of the speech bubble); a group of strings will play one string after another without big pauses. A quote is a group of strings that the NPC will read through before being quiet for some seconds.
 
 ### Intro quote
+{: .no_toc }
 
 #### Setting an intro quote
 {: .no_toc }
@@ -280,6 +366,7 @@ Make sure you understand the difference between quotes and strings before you st
    {: .highlight }
 
 ### Flag quotes
+{: .no_toc }
 
 #### Setting flag quotes
 {: .no_toc }
@@ -319,6 +406,7 @@ Make sure you understand the difference between quotes and strings before you st
 {: .note-title }
 
 ### Looping quotes
+{: .no_toc }
 
 #### Setting looping quotes
 {: .no_toc }
@@ -349,6 +437,7 @@ Make sure you understand the difference between quotes and strings before you st
    {: .highlight }
 
 ### Screen quotes
+{: .no_toc }
 
 #### Setting screen quotes
 {: .no_toc }
@@ -390,6 +479,7 @@ Make sure you understand the difference between quotes and strings before you st
 {: .note-title }
 
 ### Item quotes
+{: .no_toc }
 
 #### Setting item quotes
 {: .no_toc }
@@ -431,6 +521,7 @@ Make sure you understand the difference between quotes and strings before you st
 {: .note-title }
 
 ### Fall quotes
+{: .no_toc }
 
 #### Setting fall quotes
 {: .no_toc }
@@ -472,6 +563,9 @@ Make sure you understand the difference between quotes and strings before you st
 > 
 > By copying the existing entire `OldManFall` (or copying it from above) and pasting it right after the closing tag (in a new line) of the `OldManFall` you've just done, you can add another fall check and a bunch of new speeches!
 {: .note-title }
+
+</div>
+</details>
 
 # Next up
 {: .text-beta }

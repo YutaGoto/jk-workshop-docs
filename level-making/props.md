@@ -2,9 +2,9 @@
 layout: default
 title: Props
 parent: Level Making
-nav_order: 5
+nav_order: 6
 has_children: true
-last_modified_date: 2024-02-01 11:06
+last_modified_date: 2024-04-18 15:05
 ---
 
 # Props folder
@@ -47,12 +47,77 @@ All of these are props, the following subcategories cover each different type of
 
 The props in-game (such as the bonfire in the first screen) are stored in the `props/textures` folder. Inside this folder, there's a configuration file named `prop_settings.xml` which contains a list of `<PropSetting>` tags.
 
-<!-- ### Adding/replacing/removing a simple prop (with Worldsmith)
+### Adding a new simple prop
 
-🚧 Work in Progress. **No trespassing!** 🏗
-{: .disclaimer } -->
+1. Navigate to the **Content Manager** page.
+
+   ![Content Manager]({{ site.baseurl }}/images/level-making/worldsmith_content_manager.png)
+
+2. Scroll until you find an header "**Props**".
+3. Click on the **Create a prop** button found on the right side. A prompt will show up asking the necessary information for your prop. The following image is how it should look like:
+
+    ![Create a prop]({{ site.baseurl }}/images/level-making/props/prop_add.png)
+
+4. Write the name for your prop (make it recognizable!).
+5. Click on **Replace** to add (or replace if already added) the texture for your prop.
+7. A new prompt will show up asking to you select the texture of your prop.
+
+    ![Add prop]({{ site.baseurl }}/images/level-making/props/prop_add_preview.png)
+
+8. After selecting your file, click **Open**.
+9. Adjust your sprite sheet by adding rows and columns to make the prop animate properly.
+
+    ![Prop adjust]({{ site.baseurl }}/images/level-making/props/prop_adjust.png)
+
+9. After clicking **Add prop**, you should see your audio piece below "Props".
+
+   ![Prop successfully added]({{ site.baseurl }}/images/level-making/props/prop_success.png)
+
+You've successfully added a prop in the prop list. Now you can add it on your screen following the next subchapter.
+
+#### Adding a prop to a screen
+
+Adding a prop to a screen has not been yet implemented inside Worldsmith. If you'd like to do add a prop to a screen, consider looking out the [**Steps (without Worldsmith)**](./#steps-without-worldsmith).
+{: .disclaimer }
+
+#### Changing/removing a prop from a screen
+
+1. Navigate to the **Screens** page.
+2. Using the **Go to screen...** button or the up-down arrows, move to the screen you have the background you want to change/get rid of.
+3. From the right side of the page, expand the **Props** tab.
+
+    > Click on a prop or, using the left side of the page (preview), click on the prop's animated sprite to easily find the prop you are looking for!
+    {: .note }
+
+    ![Props]({{ site.baseurl }}/images/level-making/props/worldsmith_prop_tab.png)
+
+Modify the prop's position using the input boxes, or flip the prop's texture. Click the yellow button with the cog to head over in the Content Manager page and **edit your prop settings** accordingly. Click on the red button with the X to **remove** the prop instance **from the current screen**.
+
+### Changing or removing a simple prop
+
+1. Navigate to the **Content Manager** page.
+
+   ![Content Manager]({{ site.baseurl }}/images/level-making/worldsmith_content_manager.png)
+
+2. Scroll until you find an header "**Props**".
+3. Click on the prop you are looking to modify. The following pop-up will show up:
+
+    ![Prop successfully added]({{ site.baseurl }}/images/level-making/props/prop_settings.png)
+
+Change the details at will. If you'd like to delete the prop, click **Delete this prop** on the bottom-left corner of the pop-up.
+
+> This will delete every instance of this prop used in the various screens!
+{: .warning }
+
+<details class="expander">
+   <summary markdown="1">
+### Steps (without Worldsmith)
+   </summary>
+
+   <div markdown="1">
 
 ### Adding a simple prop
+{: .no_toc }
 
 > For starters, you should try having a single sprite sheet (just an image).
 
@@ -124,6 +189,7 @@ Good, you've added a prop so the game can understand its various data. Now let's
 
 
 ### Replacing a simple prop
+{: .no_toc }
 
 If you want to keep the same prop but change its texture:
 
@@ -138,6 +204,7 @@ If you want to replace a prop in a specific screen with another:
 3. Find the prop you want to replace by searching its name, change the `type` value to your new prop.
 
 ### Removing a simple prop
+{: .no_toc }
 
 To remove a prop:
 
@@ -150,6 +217,9 @@ To remove a prop:
 7. Find your prop you want to remove by searching its name again.
 8. Remove the whole `PropSettings` tag containing the `name` that equals the name of your prop. 
 9. Remove the prop packed XNB file from the same folder.
+
+</div>
+</details>
 
 ### Disclaimer for animated props
 {: #animation-index }

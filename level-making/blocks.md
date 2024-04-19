@@ -3,7 +3,7 @@ layout: default
 title: Blocks
 parent: Level Making
 nav_order: 2
-last_modified_date: 2023-03-29 11:27
+last_modified_date: 2024-04-16 12:37
 ---
 
 <style>
@@ -99,6 +99,67 @@ The snow block is a solid block that will make the player stand in one position,
 - you can't walk on it,
 - you can't slide on it [^2],
 - it can affect your direction [^3].
+
+<br>
+#### Snow particles
+
+The snow hitbox/mechanic can let you decide which type of snow particles you would like to have in a particular area.
+
+> This is an optional, therefore if you don't want a different snow type you can leave it as is and it will default to no particles used.
+{: .highlight }
+
+<!-- ### Adding/removing a snow particle (with Worldsmith) 
+
+🚧 Work in Progress. **No trespassing!** 🏗
+{: .disclaimer } -->
+
+<details class="expander">
+   <summary markdown="1">
+### Steps (without Worldsmith)
+{: .no_toc }
+   </summary>
+   <div markdown="1">
+
+The `snow_settings.xml` (snow particles settings file) file can be found inside the `particles` folder of your level.
+
+### Adding/removing a snow particle 
+{: .no_toc }
+
+To add a snow particle:
+
+1. Write down the first and last screen where you want your particle to present.
+2. Decide [__what type of snow particle you want__]({{site.baseurl}}/api/particles){: target="_blank"}.
+3. Copy the following snippet:
+   ```xml
+   <SpriteSpan>
+    <start>YOUR_FIRST_SCREEN</start>
+    <end>YOUR_LAST_SCREEN</end>
+    <sprite>YOUR_SNOW_PARTICLE_TYPE</sprite>
+   </SpriteSpan>
+   ```
+4. Navigate to `particles` and open `snow_settings.xml`.
+5. If this is your first time dealing with snow particles, remove the already existing `SpriteSpan`s.
+6. Paste in a new line below the `sprite_spans` opening tag.
+7. Replace `YOUR_FIRST_SCREEN` with your first screen.
+8. Replace `YOUR_LAST_SCREEN` with your last screen.
+9. Replace `YOUR_SNOW_PARTICLE_TYPE` with the value of the particle chosen.
+
+To remove a snow particle:
+
+1. Find the screen(s) where the snow particle is present.
+2. Navigate to `particles` and open `snow_settings.xml`.
+3. Find the `SpriteSpan` that contains your screens (between start and end) and delete it.
+4. If your `sprite_spans` is without any `SpriteSpan`, add the following SpriteSpan:
+   ```xml
+   <SpriteSpan>
+      <start>0</start>
+      <end>0</end>
+      <sprite>0</sprite>
+    </SpriteSpan>
+    ```
+
+</div>
+</details>
 
 ### <input type="color" title="RGB(255,255,128)" value="#FFFF80">Thin snow block
 

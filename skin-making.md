@@ -2,13 +2,13 @@
 layout: default
 title: Skin Making
 nav_order: 8
-last_modified_date: 2023-03-24 13:32
+last_modified_date: 2024-04-18 18:22
 ---
 
 # Skin Making
 {: .no_toc }
 
-**everything** you need to know for your skin or set.<!-- more -->
+**everything** you need to know to make a skin or set.<!-- more -->
 {: .fs-6 .fw-300 }
 
 ## Table of contents
@@ -29,7 +29,14 @@ First of, open the software of your choice and set two layers.
 > A simple trick while making a skin is setting the second (or bottom) layer to a lower opacity, for example 50%.
 {: .note }
 
+<details class="expander">
+   <summary markdown="1">
+### Additional details (without Worldsmith)
+   </summary>
+   <div markdown="1">
+
 ### Once satisfied with the texture(s)
+{: .no_toc }
 
 1. Disable or hide the last (bottom) layer. 
 2. > **If you are doing a single skin**, export the image file but save the filename somewhere since you will need it later.
@@ -43,6 +50,7 @@ First of, open the software of your choice and set two layers.
    {: .highlight }
 
 ## Why does Jump King need a configuration file?
+{: .no_toc }
 
 In order for get the basic data about your skin or set, Jump King (and in the past with JumpKingPlus) uses a configuration file.
 
@@ -51,7 +59,32 @@ This configuration file contains your skin or set:
 - one (if a skin) or multiple (if a set) **filenames** of your packed images
 - one (if a skin) or multiple (if a set) **item** you want to override
 
+</div>
+</details>
+
 ## Single skins
+
+<!-- ### Setting everything (using Worldsmith)
+🚧 Work in Progress. **No trespassing!** 🏗
+{: .disclaimer } -->
+
+### Changing/replacing a skin
+
+1. Navigate to the **Wardrobe** page.
+2. Scroll until you find an header "Wardrobe".
+3. You should find one item inside the **Customized** tab, which represents your single skin.
+
+![Single skin settings]({{ site.baseurl }}/images/level-making/king/single_skin_hover.png)
+
+From here you can change its type using the dropdown. Hovering your item will show additional settings such as: a **Replace** button to replace your item's texture and a button with a folder icon if you were to open that skin with your file explorer.
+
+
+
+<details class="expander">
+   <summary markdown="1">
+### Steps (without Worldsmith)
+   </summary>
+   <div markdown="1">
 
 The configuration in sigle skins is called `cosmetic_settings.xml`.<br>Open the file and proceed with the settings below. A single skin's configuration file looks like this:
 
@@ -64,11 +97,8 @@ The configuration in sigle skins is called `cosmetic_settings.xml`.<br>Open the 
 </ReskinSettings>
 ```
 
-<!-- ### Setting everything (using Worldsmith)
-🚧 Work in Progress. **No trespassing!** 🏗
-{: .disclaimer } -->
-
 ### Setting the skin's item
+{: .no_toc }
 
 1. Search for "skin" in your XML file.
    You should find something like this:
@@ -79,6 +109,7 @@ The configuration in sigle skins is called `cosmetic_settings.xml`.<br>Open the 
 3. Done!
 
 ### Setting the skin's filename
+{: .no_toc }
 
 1. Search for "name" in your XML file.
    You should find something like this:
@@ -88,7 +119,61 @@ The configuration in sigle skins is called `cosmetic_settings.xml`.<br>Open the 
 2. Replace `YOUR_NAME_HERE` with the packed file name of your skin (no extension in the name).
 3. Done!
 
+</div>
+</details>
+
 ## Skin sets
+
+### Adding a skin to a skin set
+
+1. Navigate to the **Wardrobe** page.
+2. Scroll until you find an header "Wardrobe".
+3. You should find a **Default** tab, expanding it will show you the items you haven't customized.
+
+    ![Skin set preview]({{ site.baseurl }}/images/level-making/king/skin_set_add.png)
+
+4. Hovering an item in the **Default** tab, will display a **Replace** button.
+5. By clicking it, a prompt will show up asking you to select a texture for the skin you've clicked the Replace button on.
+
+    ![Skin set add]({{ site.baseurl }}/images/level-making/king/skin_set_add_preview.png)
+
+6. After clicking **Open**, your newly modified skin will be displayed inside the **Customized** tab.
+
+    ![Skin set success]({{ site.baseurl }}/images/level-making/king/skin_set_add_success.png)
+
+### Replacing a skin from a skin set
+
+1. Navigate to the **Wardrobe** page.
+2. Scroll until you find an header "Wardrobe".
+3. You should find a **Customized** tab, expanding it will show you the items you have customized already.
+
+    ![Skin set preview]({{ site.baseurl }}/images/level-making/king/skin_set_replace.png)
+
+4. Hovering an item in the **Customized** tab, will display a series of buttons including a **Replace** button.
+5. By clicking it, a prompt will show up asking you to select a texture for the skin you've clicked the Replace button on.
+  
+    ![Skin set preview]({{ site.baseurl }}/images/level-making/king/skin_set_replace_preview.png)
+
+6. After clicking **Open**, your updated skin will be displayed.
+
+    ![Skin set success]({{ site.baseurl }}/images/level-making/king/skin_set_replace_success.png)
+
+### Deleting a skin from a skin set
+
+1. Navigate to the **Wardrobe** page.
+2. Scroll until you find an header "Wardrobe".
+3. You should find a **Customized** tab, expanding it will show you the items you have customized already.
+
+    ![Skin set preview]({{ site.baseurl }}/images/level-making/king/skin_set_replace.png)
+
+4. Hovering an item in the **Customized** tab, will display a series of buttons including a red button that has a tooltip that says "Bring back the default look". 
+5. Clicking that button will remove the customized skin from your skin set.
+
+<details class="expander">
+   <summary markdown="1">
+### Steps (without Worldsmith)
+   </summary>
+   <div markdown="1">
 
 The configuration in skin sets is called `set_settings.xml`.<br>Open the file and proceed with the settings below. A skin set's configuration file looks like this:
 
@@ -109,11 +194,8 @@ The configuration in skin sets is called `set_settings.xml`.<br>Open the file an
 </SetSettings>
 ```
 
-<!-- ### Setting everything (using Worldsmith)
-🚧 Work in Progress. **No trespassing!** 🏗
-{: .disclaimer } -->
-
 ### Adding a new skin to the set
+{: .no_toc }
 
 1. Search for "Reskins" in your XML file.
 2. Add the following snippet below the opening tag of `Reskins` in a new line:
@@ -129,15 +211,19 @@ The configuration in skin sets is called `set_settings.xml`.<br>Open the file an
 6. Done!
 
 ### Removing a skin from the set
+{: .no_toc }
 
 1. Search for "Reskins" in your XML file and find the [**item**]({{site.baseurl}}/api/items){:target="_blank"} that you want to remove.
 2. Remove the whole `Reskin` tag that contains `skin` as your unwanted item.
 3. Done!
 
+</div>
+</details>
+
 ## Testing
 
-> Testing your skin is currently not available since you can see your skin in the pixel art/image editor of your choice.
-{: .highlight }
+> Testing your skin is **currently not available** since you can see your skin directly both in Worldsmith and in your pixel-art editor of choice.
+{: .warning }
 
 <!-- **WARNING**:<br>The following reskins and collections won't work in custom levels:
 - Base reskin

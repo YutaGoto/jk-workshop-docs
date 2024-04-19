@@ -2,7 +2,7 @@
 layout: default
 title: Skin&#58; First steps
 parent: Getting started
-nav_order: 4
+nav_order: 5
 last_modified_date: 2024-04-11 17:00
 ---
 

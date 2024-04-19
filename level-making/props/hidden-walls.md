@@ -4,7 +4,7 @@ title: Hidden Walls
 grand_parent: Level Making
 parent: Props
 nav_order: 1
-last_modified_date: 2023-03-24 13:32
+last_modified_date: 2024-04-17 14:45
 ---
 
 # Hidden walls
@@ -26,20 +26,58 @@ props that disappear by triggering a hitbox<!-- more -->
 
 Hidden walls are graphics placed in front of other layers to hide them. They become transparent when the player touches them.
 
-### Before touching the hidden wall
-![Before]({{site.baseurl}}/images/level-making/props/hidden_wall_before_example.png){:title="Before touching the hidden wall"}
-### After touching the hidden wall
-![After]({{site.baseurl}}/images/level-making/props/hidden_wall_after_example.png){:title="After touching the hidden wall"}
+### Before colliding the hidden wall
+![Before]({{site.baseurl}}/images/level-making/props/hidden_wall_before_example.png){:title="Before colliding the hidden wall"}
+### After colliding the hidden wall
+![After]({{site.baseurl}}/images/level-making/props/hidden_wall_after_example.png){:title="After colliding the hidden wall"}
 
 
 ## Dealing with hidden walls
 
-<!-- ### Adding/replacing/removing a hidden wall (with Worldsmith)
+### Adding a hidden wall
 
-🚧 Work in Progress. **No trespassing!** 🏗
-{: .disclaimer } -->
+1. Navigate to the **Screens** page.
+2. Using the **Go to screen...** button or the up-down arrows, move to the screen you want to add a weather.
+2. Right-click on the preview on the left-side of the page, a context menu like the following should appear.
+
+	![Context menu]({{ site.baseurl }}/images/level-making/screens/worldsmith_screens_context_menu.png)
+
+4. Navigate into **Add on screen...** and click on **Hidden wall**.
+
+	![Add hidden wall]({{ site.baseurl }}/images/level-making/props/hidden_wall_context_menu.png)
+
+5. A new prompt will show up asking you some details about your new hidden wall. Write a recognizable name for you, and click **Select sprite**.
+
+	![Add hidden wall]({{ site.baseurl }}/images/level-making/props/hidden_wall_add.png)
+
+6. A new prompt will show up asking to you select a sprite for your hidden wall.
+
+	![Select hidden wall sprite]({{ site.baseurl }}/images/level-making/props/hidden_wall_add_preview.png)
+
+7. After selecting **Open**, click **Add** and your hidden wall should be present in your preview!
+
+	![Hidden wall added]({{ site.baseurl }}/images/level-making/props/hidden_wall_success.png)
+
+### Changing or removing a hidden wall
+
+1. Using the **Go to screen...** button or the up-down arrows, move to the screen you have the weather you want to change/get rid of.
+2. From the right side of the page, expand the **Hidden walls** tab.
+
+    ![Hidden wall settings]({{ site.baseurl }}/images/level-making/props/hidden_wall_settings.png)
+
+3. Change the hidden wall position, SFX trigger and hitboxes as you wish.
+
+    > This might be unstable/working being that it has not been yet completed.
+    {: .highlight }
+
+<details class="expander">
+   <summary markdown="1">
+### Steps (without Worldsmith)
+   </summary>
+   <div markdown="1">
 
 ### Adding a hidden wall
+{: .no_toc }
 
 If you want to add a new hidden wall:
 
@@ -96,6 +134,7 @@ If you want to add a new hidden wall:
 6. Replace the X and Y (`YOUR_HIDDEN_WALL_X_POSITION` and `YOUR_HIDDEN_WALL_Y_POSITION`) with the relative position of the top-left corner.
 
 ### Replacing a hidden wall
+{: .no_toc }
 
 To replace an already existing hidden wall image:
 
@@ -105,6 +144,7 @@ To replace an already existing hidden wall image:
    {: .highlight }
 
 ### Removing a hidden wall
+{: .no_toc }
 
 To remove a hidden wall image:
 
@@ -112,22 +152,35 @@ To remove a hidden wall image:
 2. You will need to remove each  `RaymanData` tag in the xml file(s) that contained your old file as `texture_name`.
 
 
+</div>
+</details>
+
 ## Hidden wall props
 Hidden walls can have props too!<br>
 
-Hidden walls props work in the same normal props work, but the xml configuration file is set on a different folder. Please [__read how to make normal props before continuing__]({{site.baseurl}}/level-making/props).
+Hidden walls props work in the same way normal props work, but the xml configuration file is set on a different folder. Please [__read how to make normal props before continuing__]({{site.baseurl}}/level-making/props).
 
-<!-- ### Adding/replacing/removing a hidden wall prop (with Worldsmith)
+### Adding/replacing/removing a hidden wall prop
 
-🚧 Work in Progress. **No trespassing!** 🏗
-{: .disclaimer } -->
+Adding, replacing and removing a hidden wall prop has not been yet implemented inside Worldsmith. If you'd like to do such thing, consider looking out the [**Steps (without Worldsmith)**](./#steps-without-worldsmith-1).
+{: .disclaimer }
 
-### Adding/replacing/removing wall prop
+<details class="expander">
+   <summary markdown="1">
+### Steps (without Worldsmith)
+   </summary>
+   <div markdown="1">
+
+### Adding/replacing/removing hidden wall prop
+{: .no_toc }
 
 Hidden wall props are just like [simple props]({{site.baseurl}}/level-making/props#simple-prop).
 
 > The only difference from the simple prop is the directory of the xml configuration file, that is `props/hidden walls props` instead of `props`.
 {: .warning }
+
+</div>
+</details>
 
 ## Next up
 

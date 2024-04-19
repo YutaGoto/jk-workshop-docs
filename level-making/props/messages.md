@@ -4,7 +4,7 @@ title: Messages
 grand_parent: Level Making
 parent: Props
 nav_order: 6
-last_modified_date: 2023-03-24 13:32
+last_modified_date: 2024-04-17 16:02
 ---
 
 # Messages
@@ -27,12 +27,37 @@ Messages are text that pop up from entering a trigger box such as the Billboard 
 
 ![Message example]({{site.baseurl}}/images/level-making/props/message_example.png)
 
-<!-- ## Add a message (with Worldsmith)
+## Adding a message
 
-🚧 Work in Progress. **No trespassing!** 🏗
-{: .disclaimer } -->
+Adding a message has not been yet implemented inside Worldsmith. If you'd like to add a message, consider looking out the [**Steps (without Worldsmith)**](./#steps-without-worldsmith).
+{: .disclaimer }
+
+### Editing, moving or removing a message
+
+1. Navigate to the **Screens** page.
+2. Using the **Go to screen...** button or the up-down arrows, move to the screen you have the weather you want to change/get rid of.
+3. From the right side of the page, expand the **Messages** tab. Here you should find all your messages.
+
+    > Click on a message or, using the left side of the page (preview), click on the message's hitbox to easily find the message you are looking for!
+    >
+    > ![Find message]({{ site.baseurl }}/images/level-making/props/message_find.png)
+    {: .note }
+
+    ![Change/delete message]({{ site.baseurl }}/images/level-making/props/message_modify.png)
+
+Modify your message's font, text direction, quotes at your will. Click on the yellow button with an arrow to **move the message to another screen**. Click the red button with the trash bin to **delete the message completely**.
+
+> Message's position, text position and text anchoring have not been yet implemented inside Worldsmith. If you'd like to modify them, consider looking out the [**Steps (without Worldsmith)**](./#steps-without-worldsmith).
+{: .disclaimer }
+
+<details class="expander">
+   <summary markdown="1">
+### Steps (without Worldsmith)
+   </summary>
+   <div markdown="1">
 
 ## Add a message
+{: .no_toc }
 
 1. Copy the following snippet:
    ```xml
@@ -73,10 +98,12 @@ Messages are text that pop up from entering a trigger box such as the Billboard 
    ```
 
 ### Setting the screen
+{: .no_toc }
 
 Replace `YOUR_MESSAGE_SCREEN` with your screen number.<br>This will set so the message is available to the screen given.
 
 ### Setting the hitbox
+{: .no_toc }
 
 The hitbox is needed to trigger the message to show up.
 
@@ -98,6 +125,7 @@ Height|`YOUR_HITBOX_HEIGHT`
 {: .note }
 
 ### Setting a different font (optional)
+{: .no_toc }
 
 You can also change the font if you would like.
 
@@ -106,6 +134,7 @@ If you search for the `font` tag, you can see it has a Default value.
 Check all the available values for the font in the [OldManFont's API]({{site.baseurl}}/api/props#oldmanfont){: target="_blank"}.
 
 ### Setting the text anchor
+{: .no_toc }
 
 The text anchor is the starting point for your speech bubble. Inside the `text_anchor`, you have 2 tags:
 
@@ -117,6 +146,7 @@ Y|`YOUR_TEXT_START_Y_POSITION`
 Replace the X and Y values with relative values of your screen.
 
 ### Setting the bubble format
+{: .no_toc }
 
 The bubble format can help you format text the way you want it; by aligning it differently, setting the anchor for your text and deciding the maximum width of your message's speech.
 
@@ -134,6 +164,7 @@ width|`YOUR_TEXT_BUBBLE_ANCHOR_WIDTH`
 3. Replace `YOUR_TEXT_BUBBLE_ANCHOR_WIDTH` with your speech maximum width.
 
 ### Setting the text
+{: .no_toc }
 
 Depending by your speech bubble width, the text might get very long. So don't forget to cut them in more `string`s.
 
@@ -155,9 +186,13 @@ So if you want to add more text, simply add a new line with:
 ```
 
 ### Once done...
+{: .no_toc }
 
 1. Save your file by naming it properly so you can always retroactively tell which message is.
 2. Place it in `props/messages` and you are set!
+
+</div>
+</details>
 
 ## Next up
 

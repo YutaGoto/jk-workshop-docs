@@ -4,7 +4,7 @@ title: Level Making
 has_children: true
 has_toc: false
 nav_order: 7
-last_modified_date: 2023-04-12 17:18
+last_modified_date: 2024-04-18 18:22
 ---
 
 # Level Making
@@ -46,14 +46,14 @@ To change your level's title:
 
 5. You've successfully changed the name of your level locally.
 
+> Changing the starting data. ending (extra and mandatory) images, end credits and babe screens is currently unstable or not working being still worked on. Consider looking out the [**Steps (without Worldsmith)**](./#steps-without-worldsmith) to implement them.
+{: .disclaimer }
+
 <!-- ## Changing the babe screen
 
 By default, the babe's screen equals the one in the main game.
 
-## Setting the starting data
-## Setting the ending images
-## Setting the ending extra images
-## Setting the end credits -->
+ -->
 
 <details class="expander">
    <summary markdown="1">

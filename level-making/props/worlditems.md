@@ -4,7 +4,7 @@ title: World Items
 grand_parent: Level Making
 parent: Props
 nav_order: 2
-last_modified_date: 2023-03-24 13:32
+last_modified_date: 2024-04-18 16:17
 ---
 
 # World items
@@ -26,8 +26,49 @@ are **items that the player can pick up** by triggering their hitbox<!-- more --
 🚧 Work in Progress. **No trespassing!** 🏗
 {: .disclaimer } -->
 
-## Adding a world item
+### Adding a world item on a screen
 
+Adding a world item to a screen has not been yet implemented inside Worldsmith. If you'd like to do add a world item to a screen, consider looking out the [**Steps (without Worldsmith)**](./#steps-without-worldsmith).
+{: .disclaimer }
+
+### Changing/removing a world item from a screen
+
+1. Navigate to the **Screens** page.
+2. Using the **Go to screen...** button or the up-down arrows, move to the screen you have the background you want to change/get rid of.
+3. From the right side of the page, expand the **World items** tab.
+
+    > Click on a world item or, using the left side of the page (preview), click on the world item's sprite to easily find the world item you are looking for!
+    {: .note }
+
+    ![Props]({{ site.baseurl }}/images/level-making/props/worldsmith_worlditem_tab.png)
+
+Modify the world items's position using the input boxes, or flip the prop's texture. Click on the red button with the X to **remove** the world item instance **from the current screen**.
+
+### Customize a world item
+
+1. Navigate to the **Wardrobe** page.
+2. Scroll until you find an header "Worlditems".
+3. Expand both the **Customized** and the **Default** tabs to find your world item.
+4. Once found, hover on its name/sprite to show up further settings:
+
+   ![Hover on worlditem]({{ site.baseurl }}/images/level-making/props/worlditem_hover.png)
+
+5. Click on **Replace**. A prompt will show up asking you to select the new worlditem's texture.
+
+   ![Replace worlditem texture]({{ site.baseurl }}/images/level-making/props/worlditem_add_preview.png)
+
+6. After clicking **Open**, your worlditem should have changed sprite!
+
+   ![Successfully changed worlditem]({{ site.baseurl }}/images/level-making/props/worlditem_success.png)
+
+<details class="expander">
+   <summary markdown="1">
+## Steps (without Worldsmith)
+   </summary>
+   <div markdown="1">
+
+## Adding a world item
+{: .no_toc }
 
 1. Make sure the [item]({{site.baseurl}}/api/items){: target="_blank"} you want to use can be a world item.
 2. Choose where you would like to have the world item in-game, writing down the screen number, X and Y positions.
@@ -66,12 +107,14 @@ The world item should be now available like so:
 {: .highlight }
 
 ## Removing a world item
+{: .no_toc }
 
 1. Open the worlditems xml configuration file located in `props/worlditems`.
 2. Find the item you want to delete.
 3. Remove the entire `WorldItemState` tag of the world item that you don't like.
 
 ## Personalizing a world item (optional)
+{: .no_toc }
 
 In the same folders where you found the worlditems xml configuration file you can find some packed XNB files. Each file corresponds to the texture of the world item.
 
@@ -88,6 +131,9 @@ By replacing any of these, you will change the look of your world item.
 |silver_coin|Silver Coin|
 |tunic|Tunic|
 |yellow_shoes|Yellow shoes|
+
+</div>
+</details>
 
 ## Next up
 

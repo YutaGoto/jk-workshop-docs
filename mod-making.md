@@ -4,7 +4,7 @@ title: Mod Making
 has_children: true 
 has_toc: false # true if you want the list of subpages
 nav_order: 9
-last_modified_date: 2024-02-28 12:25 # remember to change this when updating a file (just for UI effect)!
+last_modified_date: 2024-04-16 15:07 # remember to change this when updating a file (just for UI effect)!
 ---
 
 <!-- your content -->
@@ -12,6 +12,9 @@ last_modified_date: 2024-02-28 12:25 # remember to change this when updating a f
 # Mod Making
 {: .no_toc}
 <!-- the .no_toc class prevents to add the title to the following table of contents -->
+
+**everything** you need to know to make a mod.<!-- more -->
+{: .fs-6 .fw-300 }
 
 <!-- more -->
 <!-- cuts text for "seo"/embed -->
@@ -23,6 +26,9 @@ last_modified_date: 2024-02-28 12:25 # remember to change this when updating a f
 {:toc}
 
 ---
+
+> Making a mod for Jump King requires **<u>at least</u>** a basic programming background!<br>**This is not made for starters!**
+{: .warning }
 
 ## Getting started
 Jump King has a world of modding capabilities, and as part of the Workshop update we have refactored and exposed a series of game systems to support the creation of mods. A mod for Jump King can be split broadly into three categories:
@@ -55,19 +61,51 @@ Once complete your project will open! Be sure to update the text inside the `Jum
 
 ![Update the 'JumpKingMod' attribute, and get coding!]({{ site.baseurl }}/images/mod-making/image-9.png)
 
+<details class="expander">
+   <summary markdown="1">
 ### Manual Setup (Visual Studio 2022 or previous)
+   </summary>
+   <div markdown="1">
 
-![Select the "Class Library (.NET Framework)" option from the Visual Studio templates]({{ site.baseurl }}/images/mod-making/image-1.png)
+1. Select the "Class Library (.NET Framework)" option from the Visual Studio templates. 
 
-![Name your project and ensure it is targeting .NET Framework v4.5]({{ site.baseurl }}/images/mod-making/image-2.png)
+    ![Select the "Class Library (.NET Framework)" option from the Visual Studio templates]({{ site.baseurl }}/images/mod-making/image-1.png)
 
-To make use of the attributes and types referenced by Jump King you will need to add it as a reference to your project, how to do this varies depending on your IDE of choice. For Visual Studio, go to the Solution Explorer and right click on the 'References' option underneath your project and select 'Add Reference', then select the 'Browse...' button in the bottom right and navigate to the JumpKing.exe in your Steam install directory.
+2. Name your project and ensure it is targeting .NET Framework v4.5
 
-![Right click on 'References' under your project in the Visual Studio Solution Explorer and select 'Add Reference...']({{ site.baseurl }}/images/mod-making/image-3.png)
+    ![Name your project and ensure it is targeting .NET Framework v4.5]({{ site.baseurl }}/images/mod-making/image-2.png)
 
-![Select 'Assemblies' then click 'Browse' in the bottom right]({{ site.baseurl }}/images/mod-making/image-4.png)
+3. To make use of the attributes and types referenced by Jump King you will need to add it as a reference to your project, how to do this varies depending on your IDE of choice. For Visual Studio, go to the Solution Explorer and right click on the 'References' option underneath your project and select 'Add Reference', then select the 'Browse...' button in the bottom right and navigate to the JumpKing.exe in your Steam install directory.
 
-![Navigate to your Jump King install directory and include JumpKing.exe and MonoGame.Framework.dll]({{ site.baseurl }}/images/mod-making/image-5.png)
+4. Right click on 'References' under your project in the Visual Studio Solution Explorer and select 'Add Reference...'
+
+    ![Right click on 'References' under your project in the Visual Studio Solution Explorer and select 'Add Reference...']({{ site.baseurl }}/images/mod-making/image-3.png)
+
+5. Select 'Assemblies' then click 'Browse' in the bottom right
+
+    ![Select 'Assemblies' then click 'Browse' in the bottom right]({{ site.baseurl }}/images/mod-making/image-4.png)
+
+6. Navigate to your Jump King install directory and include JumpKing.exe and MonoGame.Framework.dll
+
+    ![Navigate to your Jump King install directory and include JumpKing.exe and MonoGame.Framework.dll]({{ site.baseurl }}/images/mod-making/image-5.png)
+
+</div>
+</details>
+
+> It is **mandatory** to install the SDK to target on .NET Framework 4.5, you can easily follow these steps in this [StackOverflow's post](https://stackoverflow.com/a/70109092){: target="_blank" }.
+>
+> <details class="expander" style="margin-bottom:0">
+> <summary>Steps if the website is unavailable</summary>
+> <div markdown="1">
+>
+> 1. Download [Microsoft.NETFramework.ReferenceAssemblies.net45](https://www.nuget.org/packages/microsoft.netframework.referenceassemblies.net45){: target="_blank" } from nuget.org
+> 2. Open the package as zip (or rename the package file and change its extension from .nupkg to .zip then open it)
+> 3. Copy the files from `build\.NETFramework\v4.5\` to `C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5`
+> 4. Close Visual Studio and then reopen it
+>
+> </div>
+> </details>
+{: .warning }
 
 ## How a mod works under the hood
 

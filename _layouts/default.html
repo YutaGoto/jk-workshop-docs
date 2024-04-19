@@ -107,7 +107,7 @@ layout: table_wrappers
       {{ nav_footer_custom }}
     {% else %}
       <footer class="site-footer">
-        Copyright &copy; 2019-2022 <br>Nexile AB
+        Copyright &copy; 2019-2024 <br>Nexile AB
         <!-- This site uses <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll. -->
       </footer>
     {% endif %}
@@ -120,7 +120,7 @@ layout: table_wrappers
 
         <div class="search">
           <div class="search-input-wrap">
-            <kbd>/</kbd>
+            <span class="search-tip text-zeta">Press <kbd>/</kbd> to search</span>
             <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="{{ search_placeholder | strip_html | strip }}" aria-label="{{ search_placeholder | strip_html| strip }}" autocomplete="off" />
             <label for="search-input" class="search-label"><svg viewBox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label>
             <script>

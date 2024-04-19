@@ -4,7 +4,7 @@ title: Ravens
 grand_parent: Level Making
 parent: Props
 nav_order: 5
-last_modified_date: 2023-03-24 13:32
+last_modified_date: 2024-04-24 15:23
 ---
 
 # Ravens
@@ -43,7 +43,19 @@ You can have up to 4 different ravens in your level, which are the following:
 🚧 Work in Progress. **No trespassing!** 🏗
 {: .disclaimer } -->
 
+### Adding/changing/removing a raven
+
+Adding, changing or removing a raven has not been yet implemented inside Worldsmith. If you'd like to add, change or remove a raven, consider looking out the [**Steps (without Worldsmith)**](./#steps-without-worldsmith).
+{: .disclaimer }
+
+<details class="expander">
+   <summary markdown="1">
+### Steps (without Worldsmith)
+   </summary>
+   <div markdown="1">
+
 ### Customizing a raven's texture
+{: .no_toc }
 
 To customize use the following image as base for your raven:
 
@@ -59,6 +71,7 @@ Once done customizing it:
 3. Place the file in `props/textures/raven` and replace the file.
 
 ### Customizing a raven's details
+{: .no_toc }
 
 1. Navigate to `props/textures/raven` and open the raven's `ravset` file (it's an xml file).
 2. Replace the `item` value as your chosen [**Item**]({{site.baseurl}}/api/items).
@@ -66,6 +79,7 @@ Once done customizing it:
 
 
 ### Customizing a raven's path
+{: .no_toc }
 
 Make sure you have a list of screen numbers and relative positions for your raven to spawn in.
 
@@ -93,6 +107,7 @@ Make sure you have a list of screen numbers and relative positions for your rave
 9.  Repeat Step 3 for each raven position.
 
 ### Removing a raven
+{: .no_toc }
 
 While you can't inherently remove the files of the raven and that will get rid of your raven there is a tricky way to get it to not spawn in the visible area.
 
@@ -111,6 +126,9 @@ While you can't inherently remove the files of the raven and that will get rid o
     <fly_direction>Left</fly_direction>
    </RavenPosition>
    ```
+
+</div>
+</details>
 
 ## Next up
 

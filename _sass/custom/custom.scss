@@ -63,12 +63,12 @@ kbd {
 .search-active .search-input {
     z-index: 2;
 }
-.search kbd {
-    position: absolute;
-    z-index: 1;
-    right: 2rem;
-    top: 50%;
-    transform: translateY(-50%);
+.search .search-tip {
+  position: absolute;
+  z-index: 1;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 table.vertical thead th {
