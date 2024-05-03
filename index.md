@@ -16,6 +16,12 @@ This is an in-depth documentation for creating custom levels, skins and sets on 
         <h2 style="display:inline-block;">What's new</h2>
     </summary>
     <dl>
+        <dt>2024.05</dt>
+        <dd>
+            <p>Fixed Right wind gradients color text <i>(thanks to .Gotch(ごっち)!)</i></p>
+        </dd>
+    </dl>
+    <dl>
         <dt>2024.04</dt>
         <dd>
             <p>Updated status from beta to release candidate.</p>
