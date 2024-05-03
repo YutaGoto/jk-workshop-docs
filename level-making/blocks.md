@@ -45,7 +45,7 @@ every color defines a block, a mechanic and more!<!-- more -->
 Below are the basic blocks you use to build your level. Make sure to read up what each of the colours do before you start making your hitboxes.
 
 > Pro-tip!
-> 
+>
 > Try each colour out and test them ingame to develop an understanding for what they do.
 {: .note-title }
 
@@ -108,7 +108,7 @@ The snow hitbox/mechanic can let you decide which type of snow particles you wou
 > This is an optional, therefore if you don't want a different snow type you can leave it as is and it will default to no particles used.
 {: .highlight }
 
-<!-- ### Adding/removing a snow particle (with Worldsmith) 
+<!-- ### Adding/removing a snow particle (with Worldsmith)
 
 🚧 Work in Progress. **No trespassing!** 🏗
 {: .disclaimer } -->
@@ -122,7 +122,7 @@ The snow hitbox/mechanic can let you decide which type of snow particles you wou
 
 The `snow_settings.xml` (snow particles settings file) file can be found inside the `particles` folder of your level.
 
-### Adding/removing a snow particle 
+### Adding/removing a snow particle
 {: .no_toc }
 
 To add a snow particle:
@@ -277,8 +277,8 @@ RGB(223,255,0) of the original strength of the wind. The one-way wind will never
 
 ### <input type="color" title="RGB(224,255,0)" value="#E0FF00"><input type="color" title="RGB(239,255,0)" value="#EFFF00">Right one-way wind gradients
 
-The wind gradient block has a range of 16 intesities of the right one-way wind, from 12.5% or RGB(208,255,0) to 200% or
-RGB(223,255,0) of the original strength of the wind. The one-way wind will never change direction.
+The wind gradient block has a range of 16 intesities of the right one-way wind, from 12.5% or RGB(224,255,0) to 200% or
+RGB(239,255,0) of the original strength of the wind. The one-way wind will never change direction.
 
 - It is not solid,
 - you can't walk on it,
@@ -298,12 +298,12 @@ These are the most complex blocks. It is preferred to learn them last.
 
 The semi-solid block is a solid block that is solid only in one side.
 
-Solid side|Red channel value
----|---
-Top|65
-Right|66
-Bottom|67
-Left|68
+| Solid side | Red channel value |
+| ---------- | ----------------- |
+| Top        | 65                |
+| Right      | 66                |
+| Bottom     | 67                |
+| Left       | 68                |
 
 - It is solid [^6],
 - you can walk on it [^1],
