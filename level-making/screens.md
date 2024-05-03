@@ -3,7 +3,7 @@ layout: default
 title: Screens
 parent: Level Making
 nav_order: 4
-last_modified_date: 2024-04-17 16:39
+last_modified_date: 2024-05-03 18:02
 ---
 
 # Screens folder
@@ -156,13 +156,27 @@ To remove an unwanted background:
 
 The scrolling texture is commonly used for **mist clouds or birds** flying in the distance [right before the player layer but above the background](#example).
 
-> We are planning to have vertical scrolling images too, so the structure could change in a close future.
-{: .new }
+### Adding a scrolling image
 
-### Adding/replacing/removing a scrolling image
-
-Adding, replacing and removing a scrolling image has not been yet implemented inside Worldsmith. If you'd like to do such things, consider looking out the [**Steps (without Worldsmith)**](./#steps-without-worldsmith-1).
+Adding a scrolling image has not been yet implemented inside Worldsmith. If you'd like to add a scrolling image, consider looking out the [**Steps (without Worldsmith)**](./#steps-without-worldsmith-1).
 {: .disclaimer }
+
+### Replacing or deleting a scrolling image
+
+1. Using the **Go to screen...** button or the up-down arrows, move to the screen you have the scrolling image you want to change/get rid of.
+3. From the right side of the page, expand the **Scrolling images** tab.
+
+    ![Scrolling image tab]({{ site.baseurl }}/images/level-making/screens/scrolling_tab.png)
+
+4. Click on the scrolling image you are looking for helping you by viewing the preview on the left side.
+
+    ![Click scrolling image]({{ site.baseurl }}/images/level-making/screens/scrolling_click.png)
+
+From here, you can click **Replace** (the two arrows yellow button) to replace an existing scrolling image with another one, or click **Delete** (the red button) to delete the scrolling image.
+
+![Scrolling image settings]({{ site.baseurl }}/images/level-making/screens/scrolling_settings.png?v=0)
+
+Use the Position inputbox to move your scrolling image through the screen, change its direction (horizontal or vertical) with the dropdown labelled as Direction, change its scroll multiplier (to make it faster or slower and changing directions) with the dedicated scroll bar or change its layer to make your scrolling image more immersive inside your screen.
 
 <details class="expander">
    <summary markdown="1">
@@ -203,6 +217,7 @@ If you want to add a new scrolling image:
                     <texture>YOUR_SCROLLING_IMAGE_NAME_HERE</texture>
                     <position>0</position>
                     <scroll_multiplier>1</scroll_multiplier>
+                    <direction>Horizontal</direction>
                 </Layer>
             </layers>
         </ScrollingBGdata>
@@ -216,11 +231,13 @@ If you want to add a new scrolling image:
             <texture>YOUR_SCROLLING_IMAGE_NAME_HERE</texture>
             <position>0</position>
             <scroll_multiplier>1</scroll_multiplier>
+            <direction>Horizontal</direction>
         </Layer>
     ```
     > 2. Inside the `layers` tag, below already existing `Layer`s, paste your snippet.
 
 5. Replace `YOUR_SCROLLING_IMAGE_NAME_HERE` with the filename of your new packed scroll image.
+6. Replace `Horizontal` with `Vertical` if you'd like your scrolling image to display vertically.
 
 ### Replacing a scrolling image
 

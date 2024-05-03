@@ -2,7 +2,7 @@
 layout: default
 title: Home
 nav_order: 1
-last_modified_date: 2024-05-03 10:54
+last_modified_date: 2024-05-03 18:02
 ---
 
 # Jump King Workshop Documentation<span class="label label-green fs-4 fw-500" title="Release candidate">relcan</span>
@@ -19,6 +19,7 @@ This is an in-depth documentation for creating custom levels, skins and sets on 
         <dt>2024.05</dt>
         <dd>
             <p>Fixed Right wind gradients color text <i>(thanks to .Gotch(ごっち)!)</i></p>
+            <p>Added vertical scrolling images!</p>
         </dd>
     </dl>
     <dl>
