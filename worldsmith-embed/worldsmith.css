@@ -167,3 +167,7 @@ table {
     color: var(--text);
     background-color: var(--extra);
 }
+.spoiler a:hover {
+    color: initial;
+    background-color: initial;
+}

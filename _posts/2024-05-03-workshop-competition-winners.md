@@ -18,4 +18,4 @@
 
 <br>
 
-For more in depth information on how we chose the winning level go here: https://www.jump-king.com/event-workshop-competition-winners/
+For more in depth information on how we chose the winning level go here: [https://www.jump-king.com/event-workshop-competition-winners/](https://www.jump-king.com/event-workshop-competition-winners/)
