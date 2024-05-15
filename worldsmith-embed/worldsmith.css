@@ -158,3 +158,12 @@ table {
     border: 1px solid var(--primary-muted-bg);
     background: var(--primary-click-bg);
 }
+
+.spoiler {
+    color: var(--hover);
+    background-color: var(--hover);
+}
+.spoiler:hover {
+    color: var(--text);
+    background-color: var(--extra);
+}
