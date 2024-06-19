@@ -1,3 +1,10 @@
+---
+layout: post
+author: Phoenixx19
+title: Workshop Celebration Event!
+date: 2024-04-02
+---
+
 # [COMPETITION/PRIZE] Workshop Celebration Event! ![jinguin](https://cdn.discordapp.com/emojis/1184110427551047731.gif?size=44&quality=lossless)
 
 **Plushies + $250 Steam Gift Cards prize pool!**  🏆 ![plushjump](https://cdn.discordapp.com/emojis/1103357468060418098.webp?size=22&quality=lossless) ![bogger](https://cdn.discordapp.com/emojis/656138607005925378.webp?size=22&quality=lossless) 

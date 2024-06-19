@@ -1,3 +1,10 @@
+---
+layout: post
+author: Phoenixx19
+title: Workshop Competition Winners!
+date: 2024-05-03
+---
+
 # [Winners Announcement] Workshop Competition!
 
 ### Announcing 3 winners from 18 entries for the Jump King anniversary 🎂
