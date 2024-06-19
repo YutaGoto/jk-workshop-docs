@@ -171,3 +171,9 @@ table {
     color: var(--link-hover);
     background-color: initial;
 }
+
+/* Jump King News RSS */
+figure > img {
+    height: auto;
+    width: 100%;
+}
