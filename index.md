@@ -2,7 +2,7 @@
 layout: default
 title: Home
 nav_order: 1
-last_modified_date: 2024-05-03 18:02
+last_modified_date: 2024-08-30 18:23
 ---
 
 # Jump King Workshop Documentation<span class="label label-green fs-4 fw-500" title="Release candidate">relcan</span>
@@ -15,6 +15,12 @@ This is an in-depth documentation for creating custom levels, skins and sets on 
     <summary>
         <h2 style="display:inline-block;">What's new</h2>
     </summary>
+    <dl>
+        <dt>2024.08</dt>
+        <dd>
+            <p>Added mods that use Harmony as example.</p>
+        </dd>
+    </dl>
     <dl>
         <dt>2024.05</dt>
         <dd>
