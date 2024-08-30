@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Skin Making
+title: Skin & Set Making
 nav_order: 8
 last_modified_date: 2024-04-18 18:22
 ---
 
-# Skin Making
+# Skin & Set Making
 {: .no_toc }
 
 **everything** you need to know to make a skin or set.<!-- more -->
